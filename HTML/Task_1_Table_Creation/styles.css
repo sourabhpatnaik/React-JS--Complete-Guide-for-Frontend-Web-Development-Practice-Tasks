@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+   padding: 0; 
+}
+body{
+    background-color: aliceblue;
+}
+table{
+    width: 800px;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+table,td,th {
+    border: 1px solid black;
+    border-collapse:collapse ;
+    font-size: 24px;
+}
+td,th{
+    padding: 10px;
+}
+#head-1,#head-2,#head-3,#head-4{
+    background-color: lightblue !important;
+}
