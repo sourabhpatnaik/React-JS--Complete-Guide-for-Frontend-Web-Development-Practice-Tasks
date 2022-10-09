@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+nav>img {
+    height: 70px;
+    width: 70px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.watch-section {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+}
+
+.watch-section #clock {
+    color: white;
+    font-size: 150%;
+    width: 100%;
+    position: relative;
+    top: -40%;
+    display: none;
+}
+
+.watch-section img {
+    width: 100%;
+}
+
+#hr {
+    display: none;
+}
+
+#heart-rate {
+    color: pink;
+    font-size: 20px;
+    margin-left: 120px;
+    transform: translate(-17%, -1150%);
+}
+
+.fa-solid {
+    color: red;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: forwards;
+    animation-play-state: running;
+    animation-delay: 0s;
+    transform: translate(0%, -350%);
+
+}
+
+@keyframes pulse {
+    from {
+        font-size: 80px;
+    }
+
+    to {
+        font-size: 90px;
+    }
+}
+
+.detail-section {
+    padding-top: 5%;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+.detail-section h1 {
+    margin-bottom: 15px;
+    width: 60%;
+
+}
+
+.desc {
+    color: gray;
+    font-size: 18px;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.detail-section h3 {
+    margin-bottom: 15px;
+}
+
+.color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#col-1 {
+    background-color: #23211f;
+}
+
+#col-2 {
+    background-color: #ca3d22;
+}
+
+#col-3 {
+    background-color: #565681;
+}
+
+#col-4 {
+    background-color: #8a5362;
+}
+
+#col-5 {
+    background-color: #e9c7be;
+}
+
+#feature {
+    margin-bottom: 15px;
+}
+
+#feature-button {
+    display: flex;
+    flex-direction: row;
+}
+
+#feature-button>#f-btn-time,
+#f-btn-hr {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 10%;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: #dcdbdb;
+}
+
+#btn-submit {
+    outline: none;
+    border: none;
+    text-align: center;
+    width: 15%;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+    font-weight: 700;
+    background-color: rgb(255, 140, 0);
+}
